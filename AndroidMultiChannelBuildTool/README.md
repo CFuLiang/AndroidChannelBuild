@@ -1,4 +1,4 @@
-AndroidMultiChannelBuildTool
+﻿AndroidMultiChannelBuildTool
 ============================
 
 安卓多渠道打包工具。   
@@ -20,27 +20,26 @@ Python2 与 Python3 都能正常使用
   你可以粘贴下面的渠道到channel.txt中保持它在windows端的可读性。
 
   ```
-  samsungapps
-  hiapk
-  anzhi
-  360cn
+  youyi
   xiaomi
-  myapp
-  91com
-  gfan
-  appchina
-  nduoa
-  3gcn
-  mumayi
-  10086com
-  wostore
-  189store
-  lenovomm
-  hicloud
+  lianxiang
+  wandoujia
+  leshi
+  sougou
+  yiyonghui
+  sanxing
+  chuizi
+  maopaotang
+  jifeng
+  liantongwo
+  OPPO
+  Nduo
+  LG
+  yingyongbao
+  anzhi
+  huawei
+  vivo
   meizu
-  baidu
-  googleplay
-  wandou
   ```
   也可以自己来写入自己需要的市场，并以换行隔开
 - MultiChannelBuildTool.py是多渠道打包的脚本。
@@ -55,21 +54,3 @@ ChannelUtil中的getChannel方法可以方便的获取渠道。
 
 - 这个方案没法解决不同渠道使用渠道自己SDK的问题，友盟的SDK提供了在代码中设置渠道的方式，所以再获取到渠道号后再调用SDK相关设置渠道的方法就可以了
 - apk用的是java那一套签名，放在META-INF文件夹里的文件原则上是不参与签名的。如果Google修改了apk的签名规则，这一套可能就不适用了。
-
-# License
-
-    Copyright 2014 GavinCT
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
-
